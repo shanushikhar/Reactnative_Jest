@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot 1`] = `
+<View>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Enter username"
+    placeholderTextColor="red"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "marginBottom": 15,
+      }
+    }
+    testID="username"
+    underlineColorAndroid="transparent"
+  />
+  <Text>
+    hey
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Enter password"
+    placeholderTextColor="red"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "marginBottom": 15,
+      }
+    }
+    testID="password"
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;
