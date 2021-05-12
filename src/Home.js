@@ -5,10 +5,10 @@ import Users from './users'
 export default class Home extends Component {
     state = {
         data: ''
-    } 
+    }
 
     componentDidMount() {
-        Users.all().then(data => {})
+        Users.all().then(data => { })
     }
 
     change(x) {
@@ -27,7 +27,7 @@ export default class Home extends Component {
                     placeholder='Enter username'
                     placeholderTextColor='red'
                 />
-                <Text>hey</Text>
+                <Text>hey {this.props.data}</Text>
                 <TextInput
                     testID={'password'}
                     onChangeText={(text) => this.setState(text)}

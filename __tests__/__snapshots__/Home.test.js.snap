@@ -18,7 +18,7 @@ exports[`Snapshot testing 1`] = `
     underlineColorAndroid="transparent"
   />
   <Text>
-    hey
+    hey 
   </Text>
   <TextInput
     allowFontScaling={true}

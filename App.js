@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <View>
-        <Home />
+        <Home data='props data' />
       </View>
     )
   }
