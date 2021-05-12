@@ -5,10 +5,10 @@ import Users from './users'
 export default class Home extends Component {
     state = {
         data: ''
-    }
+    } 
 
     componentDidMount() {
-       // Users.all().then(data => console.log(data))
+        Users.all().then(data => {})
     }
 
     change(x) {

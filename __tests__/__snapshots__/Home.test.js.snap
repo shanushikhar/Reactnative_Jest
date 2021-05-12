@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot 1`] = `
+exports[`Snapshot testing 1`] = `
 <View>
   <TextInput
     allowFontScaling={true}

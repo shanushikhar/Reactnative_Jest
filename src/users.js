@@ -1,3 +1,5 @@
+import fetch from 'node-fetch'
+
 class Users {
     static all() {
         return fetch('https://facebook.github.io/react-native/movies.json')

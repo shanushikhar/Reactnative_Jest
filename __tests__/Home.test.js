@@ -1,10 +1,12 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import fetch from 'node-fetch'
 
 import Home from '../src/Home'
+import Users from '../src/users'
 
 
-test('Snapshot', () => {
+test('Snapshot testing', () => {
     const snap = renderer.create(<Home />).toJSON()
 
     expect(snap).toMatchSnapshot()
@@ -41,4 +43,24 @@ test('element testing', () => {
 
     expect(findElement(Homedata, 'username')).toBeDefined()
 
+})
+
+
+test('API testing', async function () {
+
+    // global.fetch = jest.fn().mockImplementation(() => {
+    //     let p = new Promise((resolve, reject) => {
+    //         resolve({
+    //             json: function () {
+    //                 return { ID: 1 }
+    //             }
+    //         })
+    //     })
+    //     return p
+    // })
+
+    const response = await Users.all()
+  //  console.log('datas.....', response)
+
+    expect(response.title).toBe('The Basics - Networking')
 })
