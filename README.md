@@ -1,3 +1,3 @@
 ## README
 
-Adding a readme file
+Adding a readme file and configuring from ---VSCODE---
